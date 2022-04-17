@@ -1,0 +1,130 @@
+.header-bottom {
+  --x-pad: 12px;
+  padding: 24px var(--x-pad);
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: min-content auto 1fr;
+  column-gap: 16px;
+  align-items: start;
+  height: calc(100vh - 50px);
+
+  @media (min-width: $width-mobile-h) {
+    grid-template-columns: 1fr;
+    --x-pad: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    height: initial;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr 270px;
+    grid-template-rows: auto;
+    padding: 0;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+.header-bottom--closed {
+  display: none;
+}
+
+.header-bottom--opened {
+  position: absolute;
+  width: 100%;
+}
+
+.header-bottom__title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+
+  @media (min-width: $width-mobile-h) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.header-bottom__lang-select {
+  align-self: end;
+  line-height: 24px;
+
+  @media (min-width: $width-mobile-h) {
+    margin-left: 100px;
+    line-height: 20px;
+    align-self: center;
+    width: auto;
+    text-align: center;
+    flex: 1 0 auto;
+    justify-content: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    display: none;
+  }
+}
+
+.header-bottom__lang-select-desktop {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+    margin-right: 58px;
+  }
+}
+
+.header-bottom__search {
+  @media (min-width: $width-mobile-h) {
+    grid-column: 1/-1;
+    padding: 0 var(--x-pad) var(--x-pad);
+    width: calc(100% + var(--x-pad) * 2);
+    margin: 0 calc(var(--x-pad) * -1);
+    border-bottom: 1px solid #d2d9df;
+  }
+
+  @media (min-width: $width-desktop) {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    grid-column: initial;
+    order: 2;
+  }
+}
+
+.header-bottom__mobile-menu-wrap {
+  margin-top: 15px;
+  grid-column: 1/-1;
+  margin-bottom: 27px;
+  max-height: 100%;
+  overflow-y: auto;
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    max-height: initial;
+    grid-column: initial;
+  }
+}
+
+.header-bottom__header-contacts {
+  background: #ffffff;
+  z-index: 1;
+  grid-column: 1/-1;
+  border-top: 1px solid #d2d9df;
+  padding: 12px var(--x-pad) 0;
+  margin: 0 calc(var(--x-pad) * -1);
+
+  @media (min-width: $width-mobile-h) {
+    padding: 0;
+    padding-right: 16px;
+    margin: 0;
+    margin-right: 16px;
+    border: 0;
+    border-right: 1px solid #d2d9df;
+  }
+}

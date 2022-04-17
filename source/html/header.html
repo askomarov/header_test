@@ -1,0 +1,139 @@
+<header class="header">
+
+  <!-- <div class="header__container"> -->
+
+  <!-- top header -->
+  <div class="header__top-container">
+    <div class="header__top header-top">
+      <!-- cart -->
+      <a href="#" class="header-top__cart cart">
+        <svg class="cart__icon" width="18" height="28">
+          <use href="#icon-cart"></use>
+        </svg>
+        <span class="cart__counter">2</span>
+        <span class="cart__text">Корзина</span>
+      </a>
+      <!-- menu-button -->
+      <button type="button" class="header-top__menu-button menu-button" aria-hidden="false" aria-expanded="false"
+        aria-label="открыть/закрыть меню">
+        <svg class="menu-button__svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="menu-button__svg-icon-t-line" d="M3 12H21" stroke="white" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path class="menu-button__svg-icon-m-line" d="M3 6H21" stroke="white" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path class="menu-button__svg-icon-b-line" d="M3 18H21" stroke="white" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </button>
+    </div>
+  </div>
+
+  <div class="header__bot-container">
+    <div class="header__bottom header-bottom">
+      <span class="header-bottom__title">Меню</span>
+      <!-- lang select -->
+      <div class="header-bottom__lang-select lang-select t-dropdown" data-da=".header-top, 668, 0">
+        <span class="lang-select__current-lang t-dropdown__trigger">ru</span>
+        <ul class="lang-select__t-dropdown t-dropdown__menu">
+          <li class="t-dropdown__item t-dropdown__item--active">
+            <a href="#">ru</a>
+          </li>
+          <li class="t-dropdown__item">
+            <a href="#">en</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-bottom__lang-select-desktop lang-select t-dropdown">
+        <span class="lang-select__current-lang t-dropdown__trigger">ru</span>
+        <ul class="lang-select__t-dropdown t-dropdown__menu">
+          <li class="t-dropdown__item t-dropdown__item--active">
+            <a href="#">ru</a>
+          </li>
+          <li class="t-dropdown__item">
+            <a href="#">en</a>
+          </li>
+        </ul>
+      </div>
+      <!-- form search -->
+      <div class="header-bottom__search search">
+        <form class="search__form" method="GET" action="#">
+          <label for="search">
+            <input class="search__form-input" name="search" id="search" type="text" required="required" value=""
+              placeholder="Поиск...">
+          </label>
+          <button type="submit" class="search__form-btn-submit" aria-label="search submit">
+            <svg width="24" height="24">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="header-bottom__mobile-menu-wrap">
+        <ul class="header-bottom__main-menu main-menu main-menu--desk-bottom" data-da=".header-top, 1175, 1">
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">Каталог</a>
+          </li>
+          <!-- to show menu - add class shown -->
+          <li class="main-menu__item main-menu__item--with-submenu t-dropdown t-dropdown--simple-mobile">
+            <a href="#" class="main-menu__item-link t-dropdown__trigger t-dropdown__trigger--arrow">Майнинг отель</a>
+            <ul class="main-menu__submenu t-dropdown__menu">
+              <li class="t-dropdown__item">
+                <a class="main-menu__item-link" href="#">Калининская АЭС</a>
+              </li>
+              <li class="t-dropdown__item">
+                <a class="main-menu__item-link" href="#">ПАО «Тулачермет»</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">Лизинг</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">О компании</a>
+          </li>
+        </ul>
+
+        <ul class="header-bottom__main-menu main-menu main-menu--desk-top">
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">Новости и блог</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">Контакты</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="#">Вакансии</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-bottom__header-contacts header-contacts" data-da=".header-top, 668, 1">
+        <a href="tel:+74998774145" class="header-contacts__link-tel">
+          +7 (499) 877-41-45
+        </a>
+        <div class="header-contacts__social social-menu">
+          <a class="social-menu__link" href="#">
+            <svg width="32" height="32" aria-label="link to telegramm">
+              <use href="#icon-telegram"></use>
+            </svg>
+          </a>
+          <a class="social-menu__link" href="#">
+            <svg width="32" height="32" aria-label="link to whatsapp">
+              <use href="#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </div>
+        <span class="header-contacts__hitn-text">
+          Заказать звонок
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- </div> -->
+</header>

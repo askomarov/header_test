@@ -1,0 +1,22 @@
+.social-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+
+  @media (min-width: $width-mobile-h) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.social-menu__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $width-mobile-h) {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

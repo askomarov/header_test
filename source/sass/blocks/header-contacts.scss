@@ -1,0 +1,75 @@
+.header-contacts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 5px;
+  row-gap: 9px;
+
+  @media (min-width: $width-mobile-h) {
+    column-gap: 2px;
+    row-gap: 0;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
+
+.header-contacts__link-tel {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  color: $primary-color;
+
+  @media (min-width: $width-mobile-h) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color;
+  }
+
+  @media (min-width: $width-desktop) {
+    justify-self: end;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1/-1;
+  }
+}
+
+.header-contacts__social {
+  grid-row: 1/-1;
+  grid-column: 2/3;
+  align-self: start;
+  justify-content: end;
+  gap: 8px;
+
+  @media (min-width: $width-mobile-h) {
+    align-self: center;
+    grid-column: 1/2;
+    gap: 12px;
+    margin-right: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 4px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-right: 5px;
+  }
+}
+
+.header-contacts__hitn-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-hint-color;
+
+  @media (min-width: $width-mobile-h) {
+    letter-spacing: -1px;
+    line-height: 18px;
+    text-align: right;
+  }
+
+  @media (min-width: $width-desktop) {
+    letter-spacing: 0.6px;
+  }
+}

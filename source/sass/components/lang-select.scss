@@ -1,0 +1,32 @@
+.lang-select {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: $text-hint-color;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.lang-select__t-dropdown {
+  min-width: initial;
+  max-width: 51px;
+  width: 51px;
+
+  a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

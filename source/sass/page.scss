@@ -1,0 +1,19 @@
+.page {
+  font-family: $font-family;
+  color: $text-color;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content;
+
+  @media (min-width: $width-desktop) {
+    grid-template-rows: min-content 1fr min-content;
+  }
+}
+
+.page.lock {
+  transition: $transition-speed;
+  overflow: hidden;
+  background: rgba($color: #000000, $alpha: 0.3);
+}

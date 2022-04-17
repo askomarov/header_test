@@ -1,0 +1,44 @@
+.menu-button {
+  display: none;
+
+  @media (max-width: $width-desktop) {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: $primary-color;
+  }
+}
+
+.menu-button__icon {
+  width: 22.5px;
+  height: 1px;
+  display: block;
+  background: #ffffff;
+  position: relative;
+}
+
+.menu-button[aria-expanded="true"] {
+  .menu-button__svg-icon-t-line {
+    transition: transform 0.3s ease 0s;
+    transform-origin: center;
+    transform: rotate(45deg);
+  }
+
+  .menu-button__svg-icon-b-line {
+    transform: scale(0);
+  }
+
+  .menu-button__svg-icon-m-line {
+    transition: transform 0.3s ease 0s;
+    transform-origin: center;
+    transform: translate(4px, 4px) rotate(-45deg);
+  }
+}
+
+.menu-button__svg-icon-m-line,
+.menu-button__svg-icon-t-line,
+.menu-button__svg-icon-b-line {
+  transition: transform 0.3s ease 0s;
+  transform-origin: center;
+}

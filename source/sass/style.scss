@@ -1,0 +1,33 @@
+// ////////////////////////////// //  БАЗОВЫЕ СТИЛИ ///////////////////////////////
+@import "fonts.scss";
+@import "null.scss";
+@import "variables.scss";
+@import "container.scss";
+@import "usefull.scss";
+@import "page.scss";
+@import "main.scss";
+
+// ////////////////////////////// // ОБЩИЕ КОМПОНЕНТЫ ///////////////////////////////
+@import "components/menu-button.scss";
+@import "components/cart.scss";
+@import "components/search.scss";
+@import "components/t-dropdown.scss";
+@import "components/lang-select.scss";
+@import "components/social-menu.scss";
+// @import "components/.scss";
+// @import "components/.scss";
+// @import "components/.scss";
+// @import "components/.scss";
+// @import "components/.scss";
+// @import "components/.scss";
+
+@import "blocks/header.scss";
+@import "blocks/header-top.scss";
+@import "blocks/header-bottom.scss";
+@import "blocks/header-contacts.scss";
+@import "blocks/main-menu.scss";
+// @import "blocks/.scss";
+// @import "blocks/.scss";
+// @import "blocks/.scss";
+// @import "blocks/.scss";
+// @import "blocks/.scss";
